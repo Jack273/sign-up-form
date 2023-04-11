@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="stylesheet.css"> -->
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        img {
+            width: 500px;
+            height: 800px;
+        }
+
+        .content-1 {
+            /* display: flex; */
+        }
+
+        .content-2 {
+            display: inherit;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .heading,
+        .sign-up-form,
+        .footer {
+                /*  */
+        }
+
+        .heading {
+            background: lightgray;
+            
+        }
+
+        .sign-up-form {
+            background: lightgreen;
+
+        }
+
+        .footer {
+            background-color: lightgoldenrodyellow;
+
+            
+        }
+    </style>
+</head>
+
+<body class="flex-container">
+    <div class="content-1"><img src="background-image.jpg"></div>
+    <div class="content-2">
+        <div class="heading">
+            <span>
+                This is not a real online service! You know you need to do something<br>
+                like this in your life to help realise your deepest dreams.<br>
+                Sign up <em>now</em> to get started.<br><br>
+                You <em>know</em> you want too
+            </span>
+        </div>
+        <div class="sign-up-form">
+                <div>
+                    <label for="">First name:</label>
+                    <input type="text">
+
+                    <label for="">Last name:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Phone number:</label>
+                    <input type="text">
+
+                    <label for="">Email:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label for="">Password:</label>
+                    <input type="text">
+                    <label for="">Confirm password:</label>
+                    <input type="text">
+            
+        </div>
+        <div class="footer">
+            <button>Create account</button>
+            <span>Already have an account? <a href="">Sign in</a></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Photo by <a href="https://unsplash.com/es/@supergios?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonny Gios</a> on <a href="https://unsplash.com/photos/cck9YQnp2OY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
