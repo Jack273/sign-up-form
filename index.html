@@ -6,88 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="stylesheet.css"> -->
-    <style>
-        @font-face {
-            font-family: myFirstFont;
-            src: url(/Users/jackstanbrook/repos/form-project/sign-up-form/fonts/Norse-Bold.otf);
-        }
-
-        .flex-container {
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-        }
-
-        .content-1 {
-            display: flex;
-            position: relative;
-            width: 500px;
-            height: 800px;
-
-        }
-
-        .background-image {
-            width: 100%;
-            height: 100%;
-            /* object-fit: fill; */
-        }
-
-        .logo {
-            position: absolute;
-            top: 20%;
-            left: 0%;
-            background-color: rgba(75, 75, 79, 0.475);
-            width: inherit;
-            height: 15%;
-        }
-
-        .logo img {
-            position: relative;
-            height: 120px;
-            left: 30%;
-            align-items: center;
-            opacity: 1;
-        }
-
-        .logo span {
-            position: relative;
-            left: 30%;
-            bottom: 20%;
-            font-size: 100px;
-            color: orangered;
-            font-family: myFirstFont;
-            opacity: 2;
-
-        }
-
-        .content-2 {
-            display: inherit;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .heading,
-        .sign-up-form,
-        .footer {
-            flex-grow: 1;
-
-        }
-
-        .heading {
-            background: lightgray;
-
-        }
-
-        .sign-up-form {
-            background: lightgreen;
-
-        }
-
-        .footer {
-            background-color: lightgoldenrodyellow;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body class="flex-container">
@@ -107,35 +26,47 @@
                 You <em>know</em> you want too
             </span>
         </div>
+
         <div class="sign-up-form">
-            <form action="">
+            <form>
                 <legend>Lets do this!</legend>
-                <div>
-                    <label for="">First name:</label>
-                    <input type="text">
+                <div class="form-row-1">
+                    <label for="first_name">First name:
+                        <input type="text" id="first_name" name="first_name">
+                    </label>
 
-                    <label for="">Last name:</label>
-                    <input type="text">
+                    <label for="last_name">Last name:
+                        <input type="text" id="last_name" name="last_name">
+                    </label>
+
                 </div>
 
-                <div>
-                    <label for="">Phone number:</label>
-                    <input type="text">
+                <div class="form-row-2">
+                    <label for="phone_number">Phone number:
+                        <input type="text" id="phone_number" name="user_number">
+                    </label>
 
-                    <label for="">Email:</label>
-                    <input type="text">
+
+                    <label for="mail">Email:
+                        <input type="text" id="mail" name="user_email">
+                    </label>
+
                 </div>
 
-                <div>
-                    <label for="">Password:</label>
-                    <input type="text">
-                    <label for="">Confirm password:</label>
-                    <input type="text">
+                <div class="form-row-3">
+                    <label for="password">Password:
+                        <input type="text" id="password">
+                    </label>
+
+                    <label for="c_password">Confirm password:
+                        <input type="text" id="c_password" name="user_password">
+                    </label>
+
                 </div>
             </form>
         </div>
-        <div class="footer">
-            <button>Create account</button>
+        <div class="create-account">
+            <button>Create Account</button>
             <span>Already have an account? <a href="">Sign in</a></span>
         </div>
     </div>
